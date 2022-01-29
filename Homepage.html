@@ -1,0 +1,20 @@
+<head>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+  <div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+// TO MAKE THE MAP APPEAR YOU MUST
+// ADD YOUR ACCESS TOKEN FROM
+// https://account.mapbox.com
+mapboxgl.accessToken = 'pk.eyJ1IjoiamtydXNlNyIsImEiOiJja3owMjgwOGwxNXluMndtc25nd3ptdTQ5In0.FUuO0vke7KYzyc7nJaz0jg';
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+</script>
+</body>
